@@ -12,9 +12,15 @@ public class HelloController {
    }
 
    public class SayHello {
+      public SayHello(String string) {
+      }
+
+      public SayHello() {
+      }
+
       @GetMapping("/say_hello")
       public String sayHello(@RequestParam(defaultValue = "World") String name) {
-         return "Welcome to Spring Boot!";
+         return "Hello World";
       }
    } 
 } 
