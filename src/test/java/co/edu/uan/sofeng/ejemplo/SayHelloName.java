@@ -23,6 +23,6 @@ public class SayHelloName{
     SayHello sayHello = new SayHello("Jorge");
 
       ResponseEntity<String> response = template.getForEntity("/say_hello", String.class);
-      assertThat(response.getBody()).isEqualTo("HelloJorge");
+      assertThat(response.getBody()).isEqualTo("Hello Jorge");
    }
 }
